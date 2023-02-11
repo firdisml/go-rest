@@ -17,7 +17,7 @@ type Instance struct {
 var Database Instance
 
 func Connect() {
-	dsn := "host=containers-us-west-189.railway.app user=postgres password=1aOUGSpULEROiwM8foxJ dbname=railway port=7713 sslmode=disable"
+	dsn := ""
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
